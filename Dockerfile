@@ -3,7 +3,7 @@ FROM trufflesuite/ganache-cli:v6.4.3
 WORKDIR /testchain
 
 COPY . .
-RUN apk add tar && tar xzf ./snapshots/MKR-WITH-TX_MANAGER.tgz -C ./chaindata
+RUN apk add tar && mkdir chaindata && tar xzf ./snapshots/MKR-WITH-TX_MANAGER.tgz -C ./chaindata
 
 EXPOSE 2000
 
