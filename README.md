@@ -41,5 +41,5 @@ OASIS_PROXY=0xc72b03c37735cf122c27dc352e5f25f75beea389
 ## how to run
 
 ```shell
-docker run diveinto/testchain
+docker run -p2000:2000 diveinto/testchain
 ```
